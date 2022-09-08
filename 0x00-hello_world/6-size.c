@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-int intergerType;
+int integerType;
 char charType;
 long int longType;
 long long int longLongInt;
