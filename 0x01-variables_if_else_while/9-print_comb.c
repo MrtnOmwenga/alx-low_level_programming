@@ -10,21 +10,12 @@ int main(void)
 {
 /* your code goes there */
 int c;
-int d;
-for (c = 0; c < 100; c++)
+for (c = 0; c < 10; c++)
 {
-if (c > 9)
-{
-d = c;
-while (d > 10)
-{
-d = d / 10;
-}
-putchar((d % 10) + '0');
-}
 putchar((c % 10) + '0');
 putchar(',');
 putchar(' ');
 }
+putchar('\n');
 return (0);
 }
