@@ -18,20 +18,20 @@ for (c = 0; c < 100; c++)
 for ( e = c + 1 ; e < 100 ; e++)
 {
 d = c;
-while (d < 10)
+while (d > 10)
 {
 d = d / 10;
 }
 f = e;
-while (f < 10)
+while (f > 10)
 {
 f = f / 10;
 }
 putchar((d % 10) + '0');
 putchar((c % 10) + '0');
 putchar(' ');
-putchar((e % 10) + '0');
 putchar((f % 10) + '0');
+putchar((e % 10) + '0');
 if (c < 98)
 {
 putchar(',');
