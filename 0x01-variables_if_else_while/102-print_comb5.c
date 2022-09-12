@@ -20,7 +20,7 @@ for ( e = c + 1 ; e < 100 ; e++)
 if (c > 9)
 {
 d = c;
-while (d > 10)
+while (d >= 10)
 {
 d = d / 10;
 }
@@ -32,7 +32,7 @@ d = 0;
 if (e > 9)
 {
 f = e;
-while (f > 10)
+while (f >= 10)
 {
 f = f / 10;
 }
