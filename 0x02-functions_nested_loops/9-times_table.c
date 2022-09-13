@@ -29,7 +29,7 @@ g = g / 10;
 }
 putchar(g + '0');
 putchar((e % 10) + '0');
-if (c < 9)
+if (d < 9)
 {
 putchar(',');
 putchar(' ');
@@ -39,7 +39,7 @@ else
 {
 putchar(' ');
 putchar(e + '0');
-if (c < 9)
+if (d < 9)
 {
 putchar(',');
 putchar(' ');
