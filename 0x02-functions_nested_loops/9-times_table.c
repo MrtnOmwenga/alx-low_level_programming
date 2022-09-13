@@ -34,9 +34,9 @@ putchar(' ');
 }
 else
 {
+putchar(' ');
 putchar(e + '0');
 putchar(',');
-putchar(' ');
 putchar(' ');
 }
 }
