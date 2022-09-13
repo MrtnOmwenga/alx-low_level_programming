@@ -15,7 +15,7 @@ int f;
 int e;
 for (c = 0; c < 24; c++)
 {
-for (e = c + 1 ; e < 60 ; e++)
+for (e = 0 ; e < 60 ; e++)
 {
 if (c > 9)
 {
