@@ -46,7 +46,7 @@ _putchar(' ');
 }
 }
 }
-_putchar('\n');
+printf("\n");
 f++;
 }
 }
