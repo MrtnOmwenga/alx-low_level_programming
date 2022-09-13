@@ -16,11 +16,11 @@ if (c <= 98)
 {
 for (; c <= 98; c++)
 {
-write(c);
+fwrite(c);
 if (c < 98)
 {
-write(',');
-write(' ');
+fwrite(',');
+fwrite(' ');
 }
 }
 }
@@ -28,11 +28,11 @@ else
 {
 for (; c >= 98; c--)
 {
-write(c);
+fwrite(c);
 if (c < 98)
 {
-write(',');
-write(' ');
+fwrite(',');
+fwrite(' ');
 }
 }
 }
