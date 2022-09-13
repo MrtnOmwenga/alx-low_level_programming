@@ -7,10 +7,10 @@
  *
  * @c: character to be checked
  *
- * Return: void
+ * Return: int
  *
  */
-void _islower(int c)
+int _islower(int c)
 {
 if ( islower(c) )
 {
