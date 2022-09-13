@@ -12,7 +12,7 @@
  */
 int _isalpha(int c)
 {
-if (isalpha(c) == 1 || isalpha(c) == 2)
+if (isalpha(c) > 0)
 {
 return (1);
 }
