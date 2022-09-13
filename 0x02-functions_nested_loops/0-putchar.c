@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * myPrintFunct - Prints a character
+ *
+ *@c: Character to print
+ *
+ * Return: void
+ *
+ */
 void myPrintFunct(char c)
 {
 putchar(c);
