@@ -18,7 +18,7 @@ for (c = 0; c < 10; c++)
 {
 for (d = 0; d < 10; d++)
 {
-int e = d * f;
+e = d * f;
 putchar(e + '0');
 putchar(',');
 putchar(' ');
