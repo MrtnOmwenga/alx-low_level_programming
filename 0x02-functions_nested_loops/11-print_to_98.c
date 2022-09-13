@@ -29,11 +29,12 @@ else
 for (; c >= 98; c--)
 {
 printf("%d", c);
-if (c < 98)
+if (c > 98)
 {
 printf(",");
 printf(" ");
 }
 }
 }
+printf("\n");
 }
