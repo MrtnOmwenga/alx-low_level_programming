@@ -16,11 +16,11 @@ if (c <= 98)
 {
 for (; c <= 98; c++)
 {
-_putchar(c);
+write(c);
 if (c < 98)
 {
-_putchar(',');
-_putchar(' ');
+write(',');
+write(' ');
 }
 }
 }
@@ -28,11 +28,11 @@ else
 {
 for (; c >= 98; c--)
 {
-_putchar(c);
+write(c);
 if (c < 98)
 {
-_putchar(',');
-putchar(' ');
+write(',');
+write(' ');
 }
 }
 }
