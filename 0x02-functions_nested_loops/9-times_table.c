@@ -28,12 +28,12 @@ while (g > 9)
 g = g / 10;
 }
 putchar(g + '0');
+}
 putchar((e % 10) + '0');
 putchar(',');
 putchar(' ');
 }
 putchar('\n');
 f++;
-}
 }
 }
