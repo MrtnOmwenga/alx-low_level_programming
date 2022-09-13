@@ -24,6 +24,6 @@ putchar(',');
 putchar(' ');
 }
 putchar('\n');
-f++
+f++;
 }
 }
