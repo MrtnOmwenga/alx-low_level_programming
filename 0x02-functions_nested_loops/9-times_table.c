@@ -22,7 +22,7 @@ for (d = 0; d < 10; d++)
 e = d * f;
 if (e > 9)
 {
-g = e
+g = e;
 while (g > 9)
 {
 g = g / 10;
