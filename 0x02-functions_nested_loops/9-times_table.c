@@ -32,7 +32,7 @@ _putchar((e % 10) + '0');
 if (d < 9)
 {
 _putchar(',');
-_putchar(' ');
+
 }
 }
 else
@@ -42,11 +42,11 @@ _putchar(e + '0');
 if (d < 9)
 {
 _putchar(',');
-_putchar(' ');
+
 }
 }
 }
-printf("\n");
+putchar('\n');
 f++;
 }
 }
