@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include "main.h"
 /**
  * times_table - Prints a times table
  *
@@ -27,26 +27,26 @@ while (g > 9)
 {
 g = g / 10;
 }
-putchar(g + '0');
-putchar((e % 10) + '0');
+_putchar(g + '0');
+_putchar((e % 10) + '0');
 if (d < 9)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
 }
 else
 {
-putchar(' ');
-putchar(e + '0');
+_putchar(' ');
+_putchar(e + '0');
 if (d < 9)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
 }
 }
-putchar('\n');
+
 f++;
 }
 }
