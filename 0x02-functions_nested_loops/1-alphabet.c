@@ -21,10 +21,9 @@ putchar('\n');
  *main - Entry point
  *
  *Return: Always 0 (Success)
- */
+
 int main(void)
 {
-/* your code goes there */
-print_alphabet();
+print_alphabet ();
 return (0);
-}
+}*/
