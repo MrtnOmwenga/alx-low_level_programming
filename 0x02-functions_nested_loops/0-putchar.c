@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+void myPrintFunct(char c)
+{
+putchar(c);
+}
 /**
  *main - Entry point
  *
@@ -13,7 +18,7 @@ char string[] = "_putchar\n";
 int c;
 for (c = 0; c < 9; c++)
 {
-putchar(string[c]);
+myPrintFunct(string[c]);
 }
 return (0);
 }
