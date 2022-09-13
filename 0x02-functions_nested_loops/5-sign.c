@@ -24,7 +24,7 @@ return (0);
 }
 else
 {
-print('-');
+putchar('-');
 return(-1);
 }
 }
