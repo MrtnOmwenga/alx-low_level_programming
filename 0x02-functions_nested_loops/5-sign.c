@@ -19,12 +19,12 @@ return (1);
 }
 else if (c == 0)
 {
-putchar(0 + '0');
+_putchar(0 + '0');
 return (0);
 }
 else
 {
-putchar('-');
+_putchar('-');
 return (-1);
 }
 }
