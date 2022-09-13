@@ -10,7 +10,7 @@
  * Return: int
  *
  */
-int print_to_98(int c)
+void print_to_98(int c)
 {
 if (c <= 98)
 {
