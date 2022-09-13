@@ -19,8 +19,8 @@ for (; c <= 98; c++)
 printf("%d", c);
 if (c < 98)
 {
-printf(',');
-printf(' ');
+printf(",");
+printf(" ");
 }
 }
 }
@@ -31,8 +31,8 @@ for (; c >= 98; c--)
 printf("%d", c);
 if (c < 98)
 {
-printf(',');
-printf(' ');
+printf(",");
+printf(" ");
 }
 }
 }
