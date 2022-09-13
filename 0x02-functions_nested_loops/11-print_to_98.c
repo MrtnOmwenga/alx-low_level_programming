@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "main.h"
+
 /**
  * print_to_98 - Prints a character
  *
@@ -16,11 +16,11 @@ if (c <= 98)
 {
 for (; c <= 98; c++)
 {
-fwrite(c);
+printf("%d", c);
 if (c < 98)
 {
-fwrite(',');
-fwrite(' ');
+printf(',');
+printf(' ');
 }
 }
 }
@@ -28,11 +28,11 @@ else
 {
 for (; c >= 98; c--)
 {
-fwrite(c);
+printf("%d", c);
 if (c < 98)
 {
-fwrite(',');
-fwrite(' ');
+printf(',');
+printf(' ');
 }
 }
 }
