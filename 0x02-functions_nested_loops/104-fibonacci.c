@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-  int c = calloc(10, sizeof(long));
+int c = (int)calloc(10, sizeof(long));
 int64_t d = 1, e = 2, f = e + d;
 printf("%ld, ", d);
 printf("%ld, ", e);
