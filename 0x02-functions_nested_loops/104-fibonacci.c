@@ -9,8 +9,13 @@
  */
 int main(void)
 {
-int* c = (int*)calloc(10, sizeof(long));
-int64_t d = 1, e = 2, f = e + d;
+int c;
+int* d = (int*)calloc(10, sizeof(long));
+int* e = (int*)calloc(10, sizeof(long));
+int* f = (int*)calloc(10, sizeof(long));
+d = 1
+e = 2
+f = e + d;
 printf("%ld, ", d);
 printf("%ld, ", e);
 for (c = 0; c < 96; c++)
