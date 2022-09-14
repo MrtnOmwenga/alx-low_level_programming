@@ -10,9 +10,9 @@
 int main(void)
 {
 int c;
-int64_t d ;
-int64_t e ;
-int64_t f ;
+int64_t d;
+int64_t e;
+int64_t f;
 d = 1;
 e = 2;
 f = e + d;
