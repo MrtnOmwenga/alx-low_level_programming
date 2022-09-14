@@ -25,16 +25,13 @@ if (e > 9)
 g = e;
 while (g > 9)
 {
-g = g / 10;
-}
+g = g / 10; }
 putchar(g + '0');
 putchar((e % 10) + '0');
 if (d < 9)
 {
 putchar(',');
-putchar(' ');
-}
-}
+putchar(' '); }}
 else
 {
 if (d > 0)
