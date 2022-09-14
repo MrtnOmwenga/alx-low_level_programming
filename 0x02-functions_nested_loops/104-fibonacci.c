@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdint.h>
 /**
  * main - Prints a times table
  *
