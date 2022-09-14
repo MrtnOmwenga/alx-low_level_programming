@@ -19,4 +19,5 @@ printf("%d, ", f);
 d = e;
 e = f;
 }
+return (0);
 }
