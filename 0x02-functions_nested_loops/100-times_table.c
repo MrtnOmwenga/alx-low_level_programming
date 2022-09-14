@@ -33,6 +33,7 @@ putchar((e % 10) + '0');
 if (d < n)
 {
 putchar(',');
+putchar(' ');
 putchar(' '); }}
 else
 {
@@ -43,6 +44,7 @@ putchar(e + '0');
 if (d < n)
 {
 putchar(',');
+putchar(' ');
 putchar(' '); }}}
 putchar('\n');
 f++; }}}
