@@ -27,22 +27,22 @@ while (g > 9)
 {
 g = g / 10;
 }
-_putchar(g + '0');
-_putchar((e % 10) + '0');
+putchar(g + '0');
+putchar((e % 10) + '0');
 if (d < 9)
 {
-_putchar(',');
-
+putchar(',');
+putchar(' ');
 }
 }
 else
 {
-_putchar(' ');
-_putchar(e + '0');
+putchar(' ');
+putchar(e + '0');
 if (d < 9)
 {
-_putchar(',');
-
+putchar(',');
+putchar(' ');
 }
 }
 }
