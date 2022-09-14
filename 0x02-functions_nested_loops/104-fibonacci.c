@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-long long unsigned int c, d = 1, e = 2, f = e + d;
+int64_t c, d = 1, e = 2, f = e + d;
 printf("%lld, ", d);
 printf("%lld, ", e);
 for (c = 0; c < 96; c++)
