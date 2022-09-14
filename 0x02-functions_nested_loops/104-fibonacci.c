@@ -10,9 +10,9 @@
 int main(void)
 {
 int c;
-int d = (int)calloc(10, sizeof(long));
-int e = (int)calloc(10, sizeof(long));
-int f = (int)calloc(10, sizeof(long));
+int64_t d ;
+int64_t e ;
+int64_t f ;
 d = 1;
 e = 2;
 f = e + d;
