@@ -14,7 +14,11 @@ printf("%ld, ", d);
 printf("%ld, ", e);
 for (c = 0; c < 48; c++)
 {
-printf("%ld, ", f);
+printf("%ld", f);
+if (c < 47)
+{
+printf(", ");
+}
 d = e;
 e = f;
 f = e + d;
