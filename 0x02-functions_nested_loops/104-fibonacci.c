@@ -13,8 +13,8 @@ int c;
 int* d = (int*)calloc(10, sizeof(long));
 int* e = (int*)calloc(10, sizeof(long));
 int* f = (int*)calloc(10, sizeof(long));
-d = 1
-e = 2
+d = 1;
+e = 2;
 f = e + d;
 printf("%ld, ", d);
 printf("%ld, ", e);
