@@ -9,7 +9,8 @@
  */
 int main(void)
 {
-int64_t c, d = 1, e = 2, f = e + d;
+int c = calloc(10, sizeof(long);
+int64_t d = 1, e = 2, f = e + d;
 printf("%ld, ", d);
 printf("%ld, ", e);
 for (c = 0; c < 96; c++)
