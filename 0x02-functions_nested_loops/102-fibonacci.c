@@ -19,5 +19,6 @@ printf("%d, ", f);
 d = e;
 e = f;
 }
+printf("\n");
 return (0);
 }
