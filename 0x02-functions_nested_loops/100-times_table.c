@@ -22,22 +22,29 @@ for (c = 0; c <= n; c++)
 for (d = 0; d <= n; d++)
 {
 e = d * f;
-if (e > 9)
+if (e > 9 && e < 100)
+{
+putchar(' ');
+printf("%d", e);
+if (d < n)
+{
+putchar(',');
+putchar(' '); }}
+else if (e <= 9)
+{
+putchar(' ');
+putchar(' ');
+putchar(e + '0');
+if (d < n)
+{
+putchar(',');
+putchar(' '); }}
+else
 {
 printf("%d", e);
 if (d < n)
 {
 putchar(',');
-putchar(' ');
-putchar(' '); }}
-else
-{
-putchar(' '); }
-putchar(e + '0');
-if (d < n)
-{
-putchar(',');
-putchar(' ');
 putchar(' '); }}}
 putchar('\n');
-f++; }}
+f++; }}}
