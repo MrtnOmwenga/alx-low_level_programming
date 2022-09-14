@@ -24,21 +24,14 @@ for (d = 0; d <= n; d++)
 e = d * f;
 if (e > 9)
 {
-g = e;
-while (g > 9)
-{
-g = g / 10; }
-putchar(g + '0');
-putchar((e % 10) + '0');
+printf("%d", e);
 if (d < n)
 {
 putchar(',');
 putchar(' ');
 putchar(' '); }}
-else
-{
-if (d > 0)
-{
+ else
+   {
 putchar(' '); }
 putchar(e + '0');
 if (d < n)
