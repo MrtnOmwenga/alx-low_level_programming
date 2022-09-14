@@ -14,7 +14,7 @@ int c;
 int d;
 int e;
 int f = 0;
-int g;
+
 if (n <= 15 && n >= 0)
 {
 for (c = 0; c <= n; c++)
@@ -30,8 +30,8 @@ if (d < n)
 putchar(',');
 putchar(' ');
 putchar(' '); }}
- else
-   {
+else
+{
 putchar(' '); }
 putchar(e + '0');
 if (d < n)
@@ -40,4 +40,4 @@ putchar(',');
 putchar(' ');
 putchar(' '); }}}
 putchar('\n');
-f++; }}}
+f++; }}
