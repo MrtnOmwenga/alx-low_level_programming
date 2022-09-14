@@ -9,15 +9,15 @@
  */
 int main(void)
 {
-int c, d = 1, e = 2, f;
-printf("%d, ",d);
-printf("%d, ", e);
+long int c, d = 1, e = 2, f = e + d;
+printf("%ld, ", d);
+printf("%ld, ", e);
 for (c = 0; c < 48; c++)
 {
-f = e + d;
-printf("%d, ", f);
+printf("%ld, ", f);
 d = e;
 e = f;
+f = e + d;
 }
 printf("\n");
 return (0);
