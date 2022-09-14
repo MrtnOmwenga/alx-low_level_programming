@@ -10,11 +10,11 @@
 int main(void)
 {
 int64_t c, d = 1, e = 2, f = e + d;
-printf("%lld, ", d);
-printf("%lld, ", e);
+printf("%ld, ", d);
+printf("%ld, ", e);
 for (c = 0; c < 96; c++)
 {
-printf("%lld", f);
+printf("%ld", f);
 if (c < 95)
 {
 printf(", ");
