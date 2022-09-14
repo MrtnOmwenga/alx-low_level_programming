@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-long int c, d = 1, e = 2, f = e + d, g = 0;
+long int d = 1, e = 2, f = e + d, g = 0;
 while (f <= 4000000)
 {
 if (f % 2 == 0)
