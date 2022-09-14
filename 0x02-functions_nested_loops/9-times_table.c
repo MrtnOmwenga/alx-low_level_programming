@@ -37,7 +37,10 @@ putchar(' ');
 }
 else
 {
+if (d > 0)
+{
 putchar(' ');
+}
 putchar(e + '0');
 if (d < 9)
 {
