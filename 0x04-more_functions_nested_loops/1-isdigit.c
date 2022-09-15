@@ -2,16 +2,15 @@
 #include <ctype.h>
 
 /**
- * _isupper- Checks whether character passed is uppercase
+ * _isdigit- Checks whether character passed is a digit
  *
  *@c: Character to be checked
  *
  * Return: int
  */
-
-int _isupper(int c)
+int _isdigit(int c)
 {
-if (isupper(c) > 0)
+if (isdigit(c) > 0)
 {
 return (1);
 }

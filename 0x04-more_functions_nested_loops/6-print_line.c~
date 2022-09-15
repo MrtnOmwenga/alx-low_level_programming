@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ *print_line- Prints a line
+ *
+ *@c: length of line
+ *
+ *Return: void
+ */
+
+void print_line(int c)
+{
+int d;
+if (c > 0)
+{
+for (d = 0; d < c; d++)
+{
+_putchar('_');
+}
+}
+_putchar('\n');
+}
