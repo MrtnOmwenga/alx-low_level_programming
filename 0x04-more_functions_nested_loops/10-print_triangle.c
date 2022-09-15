@@ -12,6 +12,8 @@
 void print_triangle(int size)
 {
 int c, d, e = size;
+if (size > 0)
+{
 for (c = 0; c < size; c++)
 {
 e--;
@@ -26,6 +28,11 @@ else
 _putchar('#');
 }
 }
+_putchar('\n');
+}
+}
+else
+{
 _putchar('\n');
 }
 }
