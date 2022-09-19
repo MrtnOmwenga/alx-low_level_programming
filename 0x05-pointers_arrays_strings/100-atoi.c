@@ -15,5 +15,5 @@
 int _atoi(char *s)
 {
 int c = atoi(s);
-return(c);
+return (c);
 }
