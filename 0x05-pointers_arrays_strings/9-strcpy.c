@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *_stprcpy- Copies one string to another
+ *_strcpy- Copies one string to another
  *
  *@dest: String to be copied to
  *@src: String to be copied from
