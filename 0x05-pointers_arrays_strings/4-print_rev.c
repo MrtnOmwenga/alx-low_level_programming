@@ -12,9 +12,6 @@
 
 void print_rev(char *s)
 {
-int c;
-for (c = strlen(*s); c >= 0; c ++)
-{
 strrev(s);
 puts(s);
 }
