@@ -17,11 +17,11 @@ int portion;
 int c;
 if (size % 2 == 0)
 {
-portion  = 2;
+portion  = size / 2;
 }
 else
 {
-portion = (size - 1) / 2;
+portion = (size + 1) / 2;
 }
 for (c = portion; c < size; c++)
 {
