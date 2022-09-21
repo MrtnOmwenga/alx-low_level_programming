@@ -5,10 +5,10 @@
 /**
  *_strcat- Concatenates two strings
  *
- *@dest- String to be concatenated to
- *@src- String to be concatenatedfrom
+ *@dest: String to be concatenated to
+ *@src: String to be concatenatedfrom
  *
- *return char *
+ *Return: char *
  */
 
 char *_strcat(char *dest, char *src)
