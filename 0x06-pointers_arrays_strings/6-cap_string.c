@@ -16,6 +16,7 @@ int c = 0, d;
 int size = sizeof(str) / sizeof(char *);
 char del[14] = " \t\n,;.!?\"(){}";
 if (size > 1)
+{
 while (str[c])
 {
 for (d = 0; d < 14; d++)
