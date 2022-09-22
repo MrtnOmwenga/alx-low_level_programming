@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -14,7 +15,7 @@ char *cap_string(char *str)
 {
 int c = 0, d;
 char del[14] = " \t\n,;.!?\"(){}";
-if (str != NULL)
+if (strlen(str) > 0)
 {
 while (str[c])
 {
