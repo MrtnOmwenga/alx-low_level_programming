@@ -11,22 +11,19 @@
 
 char *rot13(char *str)
 {
-int c = 0, d;
-char e;
-while (str[c])
+int c, d, size = sizeof(str) / sizeof(char *);
+char src[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+char dest[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+for (c = 0; c < size - 1; c++)
 {
-d = str[c];
-if (((d >= 97 && d <= 122) || (d >= 65 && d <= 90)) && (d > 109 || (d > 77 && d < 91)))
+for (d = 0; d < 52; d++)
 {
-e = d - 13;
-str[c] = e;
+if (str[c] == src[d])
+{
+str[c] = dest[d];
 }
-else if (((d >= 97 && d <= 122) || (d >= 65 && d <= 90)) && (d <= 109 || (d < 77 && d > 91)))
-{
-e = d + 13;
-str[c] = e;
 }
-c++;
 }
 return (str);
 }
