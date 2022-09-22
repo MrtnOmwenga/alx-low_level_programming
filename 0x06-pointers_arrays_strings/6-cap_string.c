@@ -13,9 +13,8 @@
 char *cap_string(char *str)
 {
 int c = 0, d;
-int size = sizeof(str) / sizeof(char *);
 char del[14] = " \t\n,;.!?\"(){}";
-if (size > 0)
+if (str != NULL)
 {
 while (str[c])
 {
