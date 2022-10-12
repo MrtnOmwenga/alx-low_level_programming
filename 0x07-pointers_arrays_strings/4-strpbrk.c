@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *_strpbrk- Returns the first character in a string that matches any of teh specified characters
+ *_strpbrk- Returns the first character that matches specified characters
  *
  *@s: String to be checked
  *@accept: Specified characters
