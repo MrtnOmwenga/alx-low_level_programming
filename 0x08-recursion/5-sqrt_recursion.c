@@ -18,17 +18,13 @@ if (j < n / 2)
 int next = j + 1;
 if (j * j == n)
 {
-return (j);
-}
+return (j); }
 else
 {
-return (recursion(n, next));
-}}
+return (recursion(n, next)); }}
 else
 {
-return (-1);
-}
-}
+return (-1); }}
 
 /**
  *_sqrt_recursion- Finds the square root of a number
@@ -44,18 +40,13 @@ int e;
 if (n > 1)
 {
 e = recursion(n, 1);
-return (e);
-}
+return (e); }
 else if (n == 1)
 {
-return (1);
-}
+return (1); }
 else if (n == 0)
 {
-return (0);
-}
+return (0); }
 else
 {
-return (-1);
-}
-}
+return (-1); }}
