@@ -13,14 +13,20 @@
 
 int recursion(int n, int j)
 {
-int next = (j + n / j) / 2;
-if (j * j <= n && (j + 1) * (j + 1) > n)
+if (j < n / 2)
+{
+int next = j + 1;
+if (j * j == n)
 {
 return (j);
 }
 else
 {
 return (recursion(n, next));
+}}
+else
+{
+return (-1);
 }
 }
 
@@ -35,10 +41,14 @@ return (recursion(n, next));
 int _sqrt_recursion(int n)
 {
 int e;
-if (n > 0)
+if (n > 1)
 {
 e = recursion(n, 1);
 return (e);
+}
+else if (n == 1)
+{
+return (1);
 }
 else if (n == 0)
 {
