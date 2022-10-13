@@ -1,3 +1,5 @@
+int is_palindrome(char *s);
+int recursion3(char c[], int d, int j);
 int is_prime_number(int n);
 int recursion2(int n, int j);
 int recursion(int n, int j);
