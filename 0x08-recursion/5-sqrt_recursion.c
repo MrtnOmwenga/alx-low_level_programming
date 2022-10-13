@@ -3,25 +3,34 @@
 #include <stdlib.h>
 
 /**
- *_sqrt_recursion- Finds the square root of a number
+ *recursion- Recursion function
  *
- *@n: The number
+ *@j: Counter
+ *@n: Number
  *
- *Return: Int
+ *Return: int
  */
 
 int recursion(int n, int j)
 {
-  int next = (j + n / j) / 2;
-  if (j * j <= n && (j + 1) * (j + 1) > n)
-    {
-      return (j);
-    }
-  else
-    {
-      return (recursion(n, next));
-    }
+int next = (j + n / j) / 2;
+if (j * j <= n && (j + 1) * (j + 1) > n)
+{
+return (j);
 }
+else
+{
+return (recursion(n, next));
+
+}
+
+/**
+ *_sqrt_recursion- Finds the square root of a number
+ *
+ *@n: the number
+ *
+ *Return: int
+ */
 
 int _sqrt_recursion(int n)
 {
