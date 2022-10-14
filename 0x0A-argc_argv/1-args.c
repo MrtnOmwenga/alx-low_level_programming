@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 if (argv[0])
 {
-printf("%d \n", argc);
+printf("%d", argc);
 }
 return (0);
 }
