@@ -17,11 +17,18 @@ unsigned int i;
 if (size > 0)
 {
 s = malloc(size * sizeof(char));
+if (s == NULL)
+{
+return (NULL);
+}
+else
+{
 for (i = 0; i < size; i++)
 {
 s[i] = c;
 }
 return (s);
+}
 }
 else
 {
