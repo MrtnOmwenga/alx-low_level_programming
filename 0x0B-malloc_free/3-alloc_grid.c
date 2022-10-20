@@ -21,7 +21,7 @@ return (NULL);
 else
 {
 int **arr;
-arr = malloc((height - 1) * sizeof(int));
+arr = malloc((height - 1) * (width -1) * sizeof(int));
 if (arr == NULL)
 {
 return (NULL);
