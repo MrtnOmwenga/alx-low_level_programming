@@ -25,6 +25,7 @@ arr = malloc(height * width * sizeof(int));
 if (arr == NULL)
 {
 return (NULL);
+free(arr);
 }
 else
 {
@@ -34,6 +35,7 @@ arr[i] = (int *)malloc(sizeof(int) * width);
 if (arr[i] == NULL)
 {
 flag = 1;
+free(arr);
 break;
 }}
 if (flag == 1)
