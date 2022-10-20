@@ -16,8 +16,7 @@ int i, j, k;
 int flag = 0;
 if (width <= 0 || height <= 0)
 {
-return (NULL);
-}
+return (NULL); }
 else
 {
 int **arr;
@@ -25,8 +24,7 @@ arr = malloc(height * width * sizeof(int));
 if (arr == NULL)
 {
 return (NULL);
-free(arr);
-}
+free(arr); }
 else
 {
 for (i = 0; i < height; i++)
@@ -37,22 +35,17 @@ if (arr[i] == NULL)
 flag = 1;
 for (k = 0; k < i; k++)
 {
-free(arr[k]);
-}
+free(arr[k]); }
 free(arr);
-break;
-}}
+break; }}
 if (flag == 1)
 {
-return (NULL);
-}
+return (NULL); }
 else
 {
 for (i = 0; i < height; i++)
 {
 for (j = 0; j < width; j++)
 {
-arr[i][j] = 0;
-}}
-return (arr);
-}}}}
+arr[i][j] = 0; }}
+return (arr); }}}}
