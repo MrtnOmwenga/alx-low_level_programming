@@ -4,7 +4,7 @@
 /**
  *free_grid- frees a 2d array
  *
- *@gris: Pointer to the grid to be freed
+ *@grid: Pointer to the grid to be freed
  *@height: Height of the 2d array
  *
  *Return: void
