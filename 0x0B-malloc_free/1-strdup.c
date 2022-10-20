@@ -24,7 +24,7 @@ while (str[i])
 len = len + 1;
 i++;
 }
-s = malloc(sizeof(char) * len);
+s = malloc(sizeof(char) * (len + 1));
 if (s == NULL)
 {
 return (NULL);
