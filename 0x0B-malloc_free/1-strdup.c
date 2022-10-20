@@ -15,7 +15,7 @@ char *s;
 int len = 0, i = 0, j;
 if (str == NULL)
 {
-return (NULL)
+return (NULL);
 }
 else
 {
