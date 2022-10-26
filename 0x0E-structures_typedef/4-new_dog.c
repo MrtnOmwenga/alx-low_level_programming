@@ -27,7 +27,7 @@ char *dog_owner = strdup(owner);
 my_dog->name = dog_name;
 my_dog->age = age;
 my_dog->owner = dog_owner;
-  
+
 return (my_dog);
 }
 }
