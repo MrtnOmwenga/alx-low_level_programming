@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #include <stdio.h>
 
 #include "dog.h"
@@ -6,7 +8,7 @@
 
 /**
 
- * main - check the code
+ * main - check the code .
 
  *
 
@@ -18,13 +20,39 @@ int main(void)
   
 {
   
+  char *name = "Ghost";
+  
+  char *owner = "Jon Snow";
+  
   dog_t *my_dog;
   
 
   
-  my_dog = new_dog("Poppy", 3.5, "Bob");
+  my_dog = new_dog(name, 4.75, owner);
   
-  printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+  if (my_dog == NULL)
+    
+    {
+      
+      printf("Failed\n");
+      
+      return (1);
+      
+    }
+  
+  /*  if (my_dog->name == name || my_dog->owner == owner)
+    
+    {
+      
+      printf("Duplicated strings should be stored in the allocated structure.\n");
+      
+      return (1);
+      
+      }*/
+  
+  printf("My name is %s, I am %.2f, and my owner is %s\n",
+	 
+	 my_dog->name, my_dog->age, my_dog->owner);
   
   return (0);
   
