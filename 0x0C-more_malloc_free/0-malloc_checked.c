@@ -21,11 +21,14 @@ return (ptr);
 else
 {
 free(ptr);
-return (NULL);
+ptr = (char *)98;
+return (ptr);
 }
 }
 else
 {
-return (NULL);
+char *ptr;
+ptr = (char *)98;
+return (ptr);
 }
 }
