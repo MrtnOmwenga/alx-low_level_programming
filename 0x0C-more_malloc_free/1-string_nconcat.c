@@ -21,7 +21,7 @@ s1 = ""; }
 if (s2 == NULL)
 {
 s2 = ""; }
-concat = malloc(sizeof(s1) + n);
+concat = malloc(sizeof(s1) + n - 2);
 if (concat == NULL)
 {
 return (NULL); }
