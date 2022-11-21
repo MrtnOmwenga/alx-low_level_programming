@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <string.h>
+#include <assert.h>
 
 /**
  *_realloc- Reallocates memory
@@ -12,44 +14,29 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-unsigned int i;
-if (ptr != NULL)
-{
-free(ptr);
-}
+void *ptrNew;
+
 if (new_size == 0)
 {
+free(ptr);
 return (NULL);
 }
+else if (!ptr)
+{
+return (malloc(new_size));
+}
+else if (new_size <= old_size)
+{
+return (ptr);
+}
 else
 {
-char *ptr = (char *)malloc(new_size);
-if (ptr == NULL)
+assert((ptr) && (new_size > old_size));
+ptrNew = malloc(new_size);
+if (ptrNew)
 {
+memcpy(ptrNew, ptr, old_size);
 free(ptr);
-return (ptr);
 }
-else
-{
-if (new_size > old_size)
-{
-for (i = 0; i < old_size; i++)
-{
-ptr[i] = 0;
-}
-return (ptr);
-}
-else if (new_size == old_size)
-{
-return (ptr);
-}
-else
-{
-for (i = 0; i < new_size; i++)
-{
-ptr[i] = 0;
-}
-return (ptr);
-}
-}
+return (ptrNew);
 }}
