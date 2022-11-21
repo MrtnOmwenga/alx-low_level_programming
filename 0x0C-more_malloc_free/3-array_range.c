@@ -23,7 +23,7 @@ else
 numbers = (int *)malloc((max - min + 1) * sizeof(int));
 if (numbers == NULL)
 {
-free (numbers);
+free(numbers);
 return (NULL);
 }
 else
