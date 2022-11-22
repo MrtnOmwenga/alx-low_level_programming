@@ -18,7 +18,7 @@ int (*funct)(int num1, int num2);
 if (argc != 4)
 {
 printf("Error\n");
-return (1);
+return (98);
 exit(98);
 }
 else if (*argv[2] != '+' && *argv[2] != '-' &&
