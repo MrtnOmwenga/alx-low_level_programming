@@ -21,12 +21,13 @@ cs_t cspec[] = {
 {'%', op_mod}
 };
 
-for (i = 0; i < 5; i++)
+while (i < 5)
 {
 if (cspec[i].cs == *s)
 {
 return (cspec[i].f);
 }
+i++;
 }
 return (0);
 }
