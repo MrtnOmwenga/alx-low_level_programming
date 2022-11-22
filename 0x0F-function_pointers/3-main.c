@@ -37,6 +37,11 @@ if (result != 1001001)
 {
 printf("%d\n", result);
 }
+else
+{
+printf ("Error\n");
+exit(100);
+}
 return (0);
 }
 }
