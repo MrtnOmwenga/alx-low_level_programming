@@ -39,8 +39,8 @@ printf("%d\n", result);
 }
 else
 {
-printf ("Error\n");
-exit (100);
+printf("Error\n");
+exit(100);
 }
 return (0);
 }
