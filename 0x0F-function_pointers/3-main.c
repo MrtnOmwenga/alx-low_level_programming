@@ -22,7 +22,7 @@ return (98);
 exit(98);
 }
 else if (*argv[2] != '+' && *argv[2] != '-' &&
-	  *argv[2] != '*' && *argv[2] != '/' && *argv[2] != '%')
+	 *argv[2] != '*' && *argv[2] != '/' && *argv[2] != '%')
 {
 printf("Error\n");
 exit(99);
@@ -40,7 +40,7 @@ printf("%d\n", result);
 else
 {
 printf ("Error\n");
-exit(100);
+exit (100);
 }
 return (0);
 }
