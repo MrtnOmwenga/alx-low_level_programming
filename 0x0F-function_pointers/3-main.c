@@ -21,6 +21,12 @@ printf("Error\n");
 return (1);
 exit(98);
 }
+else if (*argv[2] != '+' && *argv[2] != '-' &&
+	  *argv[2] != '*' && *argv[2] != '/' && *argv[2] != '%')
+{
+printf("Error\n");
+exit(99);
+}
 else
 {
 num1 = atoi(argv[1]);

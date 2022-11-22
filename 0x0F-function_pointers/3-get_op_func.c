@@ -12,29 +12,21 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-if (*s == '+')
+int i = 0;
+cs_t cspec[] = {
+{'+', op_add},
+{'-', op_sub},
+{'*', op_mul},
+{'/', op_div},
+{'%', op_mod}
+};
+
+for (i = 0; i < 5; i++)
 {
-return (op_add);
-}
-else if (*s == '-')
+if (cspec[i].cs == *s)
 {
-return (op_sub);
+return (cspec[i].f);
 }
-else if (*s == '*')
-{
-return (op_mul);
 }
-else if (*s == '/')
-{
-return (op_div);
-}
-else if (*s == '%')
-{
-return (op_mod);
-}
-else
-{
-printf("Error\n");
-exit(98);
-}
+return (0);
 }
