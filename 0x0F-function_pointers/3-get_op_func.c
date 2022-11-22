@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
-
+#include <stddef.h>
 /**
  *get_op_funct- Gets the regt function for an operation
  *
@@ -13,7 +13,7 @@
 int (*get_op_func(char *s))(int, int)
 {
 int i = 0;
-cs_t cspec[] = {
+op_t ops[] = {
 {'+', op_add},
 {'-', op_sub},
 {'*', op_mul},
@@ -23,9 +23,9 @@ cs_t cspec[] = {
 
 while (i < 5)
 {
-if (cspec[i].cs == *s)
+if (ops[i].op == *s)
 {
-return (cspec[i].f);
+return (ops[i].f);
 }
 i++;
 }

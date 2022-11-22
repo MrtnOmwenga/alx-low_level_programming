@@ -8,10 +8,18 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-typedef struct Cspecs {
+/**
+ *struct op- Struct op
+ *
+ *@op- Operator
+ *@f: Functions
+ *
+ */
+
+typedef struct op {
   
-  char cs;
-int (*f)();  
-} cs_t;
+char op;
+int (*f)(int a, int b);  
+} op_t;
 
 #endif
