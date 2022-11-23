@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *print_numbers- Prints numbers followed by new line
+ *print_strings- Prints numbers followed by new line
  *
  *@separator: Separator
  *@n: Number of arguments
@@ -14,20 +14,20 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list ap;
+va_list dup;
 unsigned int i;
-char string[100];
 
 va_start(ap, n);
+va_copy(dup, ap);
 for (i = 0; i < n; i++)
 {
-strcpy(string, va_arg(ap, char *));
-if (string == NULL)
+if (va_arg(ap, char *) == NULL)
 {
 printf("(nil)");
 }
 else
 {
-printf("%s", string);
+printf("%s", va_arg(dup, char *));
 }
 if (i != n - 1 && separator != NULL)
 {
