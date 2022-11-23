@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
- *get_op_funct- Gets the regt function for an operation
+ *get_op_func- Gets the regt function for an operation
  *
  *@s: Operator
  *
