@@ -11,7 +11,7 @@ int (*get_op_func(char *s))(int, int);
 /**
  *struct op- Struct op
  *
- *@op- Operator
+ *@op: Operator
  *@f: Functions
  *
  */
