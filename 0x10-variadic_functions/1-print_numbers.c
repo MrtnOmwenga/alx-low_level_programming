@@ -23,9 +23,6 @@ if (i != n - 1 && separator != NULL)
 {
 printf("%s", separator);
 }
-else if (i == n - 1 && separator != NULL)
-{
+}
 printf("\n");
-}
-}
 }
