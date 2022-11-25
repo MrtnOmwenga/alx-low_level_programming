@@ -28,7 +28,7 @@ n /= 2;
 }
 if (i < index)
 {
-return (0)
+return (0);
 }
 else
 {
