@@ -5,6 +5,7 @@
  *@n: Integer
  *@index: Index
  *
+ *Return: int
  */
 
 int get_bit(unsigned long int n, unsigned int index)
