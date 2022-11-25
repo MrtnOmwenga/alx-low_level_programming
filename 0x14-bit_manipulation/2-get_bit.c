@@ -26,5 +26,12 @@ return (n % 2);
 i++;
 n /= 2;
 }
+if (i < index)
+{
+return (0)
+}
+else
+{
 return (-1);
+}
 }
