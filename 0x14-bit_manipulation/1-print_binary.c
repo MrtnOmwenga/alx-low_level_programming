@@ -10,7 +10,7 @@
 
 void print_binary(unsigned long int n)
 {
-unsigned long int mask = 18014398509481984u;
+unsigned long int mask = 9223372036854775808u;
 unsigned int flag = 0;
 
 if (n == 0)
