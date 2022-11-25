@@ -10,21 +10,12 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 unsigned int i = 0;
-unsigned int dup = n, count = 0;
 
 if (n == 0)
 {
 return (0);
 }
-while (dup > 0)
-{
-dup /= 10;
-count++;
-}
-if (index > dup)
-{
-return (0);
-}
+
 while (n > 0)
 {
 if (i == index)
