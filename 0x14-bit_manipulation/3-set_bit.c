@@ -23,7 +23,13 @@ decimal_num += (binary_num % 10) * base;
 binary_num /= 10;
 base *= 2;
 }
-  
+if (decimal_num > *n)
+{
 *n += decimal_num;
 return (1);
+}
+else
+{
+return (-1);
+}
 }
