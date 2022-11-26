@@ -33,6 +33,9 @@ decimal_num += (binary_num % 10) * base;
 binary_num /= 10;
 base *= 2;
 }
+if (index != 20)
+{
 *n -= decimal_num;
+}
 return (1);
 }

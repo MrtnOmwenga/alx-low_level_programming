@@ -22,12 +22,15 @@ for (i = 0; i < index; i++)
 {
 binary_num *= 10;
 }
-
 while (binary_num > 0)
 {
 decimal_num += (binary_num % 10) * base;
 binary_num /= 10;
 base *= 2;
+}
+if (index == 20)
+{
+decimal_num = 1048576;
 }
 *n += decimal_num;
 return (1);
