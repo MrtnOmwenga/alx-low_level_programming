@@ -27,7 +27,7 @@ size_t print_list(const list_t *h)
 {
 size_t count = 1;
 struct list_s *n;
-  
+
 n = putchar_list(h);
 while (n != NULL)
 {
