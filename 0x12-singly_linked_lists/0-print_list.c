@@ -11,6 +11,10 @@
 
 struct list_s *putchar_list(const list_t *h)
 {
+if (h == NULL || (*h).str == NULL)
+{
+printf("[0] (nil)\n");
+}
 printf("[%u] %s\n", (*h).len, (*h).str);
 return ((*h).next);
 }
@@ -28,6 +32,10 @@ size_t print_list(const list_t *h)
 size_t count = 1;
 struct list_s *n;
 
+if (h == NULL)
+{
+return (0);
+}
 n = putchar_list(h);
 while (n != NULL)
 {
