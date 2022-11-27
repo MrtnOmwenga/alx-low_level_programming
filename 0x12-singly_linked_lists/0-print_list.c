@@ -11,9 +11,10 @@
 
 struct list_s *putchar_list(const list_t *h)
 {
-if (h == NULL || (*h).str == NULL)
+if ((*h).str == NULL)
 {
 printf("[0] (nil)\n");
+return ((*h).next);
 }
 printf("[%u] %s\n", (*h).len, (*h).str);
 return ((*h).next);
