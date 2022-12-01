@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *delete_node_at_index- Deletes node at index
+ *delete_nodeint_at_index- Deletes node at index
  *
  *@head: linked list
  *@index: Index
@@ -29,7 +29,7 @@ f = f->next;
 i++;
 if (f == NULL)
 {
-return (-1); 
+return (-1);
 }
 }
 g = f->next;
