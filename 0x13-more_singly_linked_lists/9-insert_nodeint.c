@@ -47,6 +47,10 @@ if (idx != 0)
 {
 h->next = new_head;
 }
+else
+{
+*head = new_head;
+}
 g = new_head;
 return (new_head);
 }
