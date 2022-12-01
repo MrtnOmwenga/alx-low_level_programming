@@ -19,22 +19,25 @@ listint_t *new_head;
 unsigned int i = 0;
 if (head == NULL || *head == NULL)
 {
-return (NULL);
-}
-
+return (NULL); }
 h = *head;
+if (idx != 0)
+{
 while (i != idx - 1)
 {
 if (h == NULL)
 {
-return (*head);
-}
+return (NULL); }
 h = h->next;
 i++;
 }
-
 g = h->next;
-
+}
+else
+{
+h = NULL;
+g = *head;
+}
 new_head = malloc(sizeof(listint_t));
 if (new_head == NULL)
 {
@@ -42,9 +45,10 @@ return (NULL);
 }
 new_head->n = n;
 new_head->next = g;
-
+if (idx != 0)
+{
 h->next = new_head;
+}
 g = new_head;
-
 return (new_head);
 }
