@@ -12,12 +12,13 @@
 int pop_listint(listint_t **head)
 {
 int i;
-listint_t *h = *head;
+listint_t *h;
 listint_t *g;
 if (head == NULL)
 {
 return (0);
 }
+h = *head;
 i = (*h).n;
 g = (*h).next;
 free(h);
