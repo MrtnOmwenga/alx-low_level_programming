@@ -17,9 +17,7 @@ listint_t *h;
 listint_t *g;
 listint_t *new_head;
 unsigned int i = 0;
-if (head == NULL || *head == NULL)
-{
-return (NULL); }
+
 h = *head;
 if (idx != 0)
 {
