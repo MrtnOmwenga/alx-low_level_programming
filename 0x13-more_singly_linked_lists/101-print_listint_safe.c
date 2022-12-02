@@ -28,5 +28,5 @@ break;
 }
 }
 
-return (num);  
+return (num);
 }
