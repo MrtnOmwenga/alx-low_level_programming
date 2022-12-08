@@ -31,6 +31,10 @@ if (i < idx)
 {
 return (NULL);
 }
+else if(i == idx)
+{
+  return (add_dnodeint_end(h, n));
+}
 prev = curr->prev;
 
 new_head = malloc(sizeof(dlistint_t));
@@ -54,5 +58,10 @@ if (curr != NULL)
 {
 curr->prev = new_head;
 }
+else
+{
+curr = new_head;
+}
+
 return (new_head);
 }
