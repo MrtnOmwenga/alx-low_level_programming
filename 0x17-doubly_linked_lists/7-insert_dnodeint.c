@@ -22,7 +22,7 @@ return (NULL);
 }
 if (idx == 0)
 {   
-return (add_dnodeint(h, n))
+return (add_dnodeint(h, n));
 }
 curr = *h;
 while (curr != NULL)
