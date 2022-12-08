@@ -35,7 +35,7 @@ if (i < index)
 {
 return (-1);
 }
-  
+
 prev = curr->prev;
 next = curr->next;
 
