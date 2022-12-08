@@ -16,53 +16,39 @@ unsigned int i = 0;
 dlistint_t *curr;
 dlistint_t *prev;
 dlistint_t *new_head;
-
 curr = *h;
 while (curr != NULL)
 {
 if (i == idx)
 {
 i++;
-break;
-}
+break; }
 curr = curr->next;
-i++;
-}
+i++; }
 if (i < idx)
 {
-return (NULL);
-}
-else if(i == idx)
+return (NULL); }
+else if (i == idx)
 {
-return (add_dnodeint_end(h, n));
-}
+return (add_dnodeint_end(h, n)); }
 prev = curr->prev;
-
 new_head = malloc(sizeof(dlistint_t));
 if (new_head == NULL)
 {
-return (NULL);
-}
+return (NULL); }
 new_head->n = n;
 new_head->prev = prev;
 new_head->next = curr;
-
 if (prev != NULL)
 {
-prev->next = new_head;
-}
+prev->next = new_head; }
 else
 {
-*h = new_head;
-}
+*h = new_head; }
 if (curr != NULL)
 {
-curr->prev = new_head;
-}
+curr->prev = new_head; }
 else
 {
-curr = new_head;
-}
-
-return (new_head);
-}
+curr = new_head; }
+return (new_head); }
