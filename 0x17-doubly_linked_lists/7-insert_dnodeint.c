@@ -16,7 +16,14 @@ unsigned int i = 0;
 dlistint_t *curr;
 dlistint_t *prev;
 dlistint_t *new_head;
-
+if (h == NULL)
+{   
+return (NULL);
+}
+if (idx == 0)
+{   
+return (add_dnodeint(h, n))
+}
 curr = *h;
 while (curr != NULL)
 {
