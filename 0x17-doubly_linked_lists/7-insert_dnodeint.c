@@ -22,6 +22,7 @@ while (curr != NULL)
 {
 if (i == idx)
 {
+i++;
 break;
 }
 curr = curr->next;
@@ -33,7 +34,7 @@ return (NULL);
 }
 else if(i == idx)
 {
-  return (add_dnodeint_end(h, n));
+return (add_dnodeint_end(h, n));
 }
 prev = curr->prev;
 
