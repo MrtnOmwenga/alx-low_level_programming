@@ -16,7 +16,7 @@ dlistint_t *n;
 
 if (*head == NULL || head == NULL)
 {
-return (NULL)
+return (NULL);
 }
 n = head;
 while (n->next != NULL)
