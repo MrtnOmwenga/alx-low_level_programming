@@ -16,7 +16,7 @@ unsigned int i = 0;
 dlistint_t *curr;
 dlistint_t *prev;
 dlistint_t *new_head;
- 
+
 curr = *h;
 while (curr != NULL)
 {
@@ -50,5 +50,5 @@ if (curr != NULL)
 {
 curr->prev = new_head;
 }
-return (*h);
+return (new_head);
 }
