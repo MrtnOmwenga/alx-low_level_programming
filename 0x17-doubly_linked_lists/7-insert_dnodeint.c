@@ -16,7 +16,6 @@ unsigned int i = 0;
 dlistint_t *curr;
 dlistint_t *new_head;
 curr = *h;
-
 while (curr != NULL)
 {
 if (i == idx)
@@ -41,7 +40,10 @@ new_head->next = curr;
 if (curr->prev != NULL)
 {
 curr->prev->next = new_head; }
-else if (*h == NULL || h == NULL)
+else
+{
+*h = new_head; }
+if (*h == NULL || h == NULL)
 {
 *h = new_head; }
 if (curr != NULL)
