@@ -41,7 +41,7 @@ new_head->next = curr;
 if (curr->prev != NULL)
 {
 curr->prev->next = new_head; }
-else
+else if (*h == NULL || h == NULL)
 {
 *h = new_head; }
 if (curr != NULL)
