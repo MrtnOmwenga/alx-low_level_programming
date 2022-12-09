@@ -43,9 +43,7 @@ curr->prev->next = new_head; }
 else
 {
 *h = new_head; }
-if (*h == NULL || h == NULL)
-{
-*h = new_head; }
+
 if (curr != NULL)
 {
 curr->prev = new_head; }
