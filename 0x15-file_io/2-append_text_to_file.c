@@ -30,7 +30,7 @@ while (text_content[count])
 count++;
 }
 sz = write(fd, text_content, count);
-if (sz < 0)
+if (sz != count)
 {
 return (-1);
 }
