@@ -16,7 +16,7 @@ dlistint_t *prev;
 dlistint_t *next;
 unsigned int i = 0;
 
-if (head == NULL || *head == NULL)
+if (head == NULL || *head == NULL || index == NULL)
 {
 return (-1);
 }
