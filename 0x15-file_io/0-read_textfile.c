@@ -38,7 +38,7 @@ close(fd);
 t = write(STDOUT_FILENO, c, sz);
 if (t < 0)
 {
-free (c);
+free(c);
 return (0);
 }
 free(c);
