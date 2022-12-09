@@ -11,20 +11,28 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-  int fd, sz;
-  char *c = (char *)malloc(sizeof(char) * letters);
+int fd, sz;
+char *c = (char *)malloc(sizeof(char) * letters);
 
-  if (filename == NULL)
-    {
-      return (0);
-    }
-  fd = open(filename, O_RDONLY);
-  if (fd < 0)
-    {
-      return (0);
-    }
-  sz = read(fd, c, letters * sizeof(char));
-  c[sz] = '\0';
-  printf("%s\n", c);
-  return (sz);
+if (c == NULL)
+{
+return (0);
+}
+if (filename == NULL)
+{
+return (0);
+}
+fd = open(filename, O_RDONLY);
+if (fd < 0)
+{
+return (0);
+}
+sz = read(fd, c, letters * sizeof(char));
+if (sz < 0)
+{
+return (0);
+}
+c[sz] = '\0';
+printf("%s\n", c);
+return (sz);
 }
