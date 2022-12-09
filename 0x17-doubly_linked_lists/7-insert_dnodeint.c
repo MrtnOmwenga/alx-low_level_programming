@@ -17,6 +17,7 @@ dlistint_t *curr;
 dlistint_t *prev;
 dlistint_t *new_head;
 curr = *h;
+
 while (curr != NULL)
 {
 if (i == idx)

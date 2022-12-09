@@ -48,7 +48,7 @@ int main(void)
   
   printf("-----------------\n");
   
-  delete_dnodeint_at_index(&head, 5);
+  delete_dnodeint_at_index(&head, 100);
   
   print_dlistint(head);
   
