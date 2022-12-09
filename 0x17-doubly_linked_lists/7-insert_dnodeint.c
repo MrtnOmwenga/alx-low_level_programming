@@ -16,9 +16,7 @@ unsigned int i = 0;
 dlistint_t *curr;
 dlistint_t *new_head;
 curr = *h;
-if (h == NULL || *h == NULL)
-{
-return (NULL); }
+
 while (curr != NULL)
 {
 if (i == idx)
