@@ -36,7 +36,7 @@ return (0);
 c[sz] = '\0';
 close(fd);
 t = write(STDOUT_FILENO, c, sz);
-if (t == NULL)
+if (t < 0)
 {
 free (c);
 return (0);
