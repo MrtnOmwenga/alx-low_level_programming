@@ -35,5 +35,6 @@ if (sz != count)
 return (-1);
 }
 }
-return (0);
+close(fd);
+return (1);
 }
