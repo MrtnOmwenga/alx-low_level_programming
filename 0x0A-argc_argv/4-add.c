@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+0;276;0c#include <stdlib.h>
 #include <ctype.h>
 
 /**
@@ -25,7 +25,8 @@ else
 int i;
 for (i = 1; i < argc; i++)
 {
-if (strtol(argv[i], &ptr, 10) == 0)
+int x = strtol(argv[i], &ptr, 10);
+if (x == 0)
 {
 printf("Error\n");
 return (1);
@@ -36,5 +37,6 @@ else
 f = f + strtol(argv[i], &ptr, 10);
 }}
 printf("%ld\n", f);
+ printf("%s\n", ptr);
 return (0);
 }}
