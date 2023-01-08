@@ -27,7 +27,7 @@ if (flag == 1)
 {
 printf(", ");
 }
-printf("'%s': '%s'",cur_hashnode->key, cur_hashnode->value);
+printf("'%s': '%s'", cur_hashnode->key, cur_hashnode->value);
 flag = 1;
 cur_hashnode = cur_hashnode->next;
 }
