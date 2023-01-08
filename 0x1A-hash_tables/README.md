@@ -1,0 +1,1 @@
+Hashtables excercises and tasks
