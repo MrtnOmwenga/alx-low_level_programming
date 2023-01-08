@@ -18,49 +18,37 @@ unsigned long int i;
 
 if (ht == NULL)
 {
-return (0);
-}
+return (0); }
 if (key == NULL || key[0] == '\0')
 {
-return (0);
-}
+return (0); }
 if (ht->size == 0 || ht->array == NULL)
 {
-return (0);
-}
+return (0); }
 
 i = key_index((unsigned char *)key, ht->size);
 curr_node = ht->array[i];
-
 while (curr_node != NULL)
 {
 if (strcmp(curr_node->key, key) == 0)
 {
 free(curr_node->value);
 curr_node->value = strdup(value);
-return (1);
-}
-curr_node = curr_node->next;
-}
+return (1); }
+curr_node = curr_node->next; }
 
 new_node = malloc(sizeof(hash_node_t));
 if (new_node == NULL)
 {
-return (0);
-}
+return (0); }
 
 new_node->key = strdup(key);
 new_node->value = strdup(value);
-
 if (ht->array[i] != NULL)
 {
-new_node->next = ht->array[i];
-}
+new_node->next = ht->array[i]; }
 else
 {
-new_node->next = NULL;
-}
-
+new_node->next = NULL; }
 ht->array[i] = new_node;
-return (1);
-}
+return (1); }
