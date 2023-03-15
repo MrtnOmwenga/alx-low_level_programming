@@ -29,23 +29,23 @@ def island_perimeter(grid):
                 try:
                     if grid[i-1][j] == 0:
                         perimeter += 1
-                except Exception:
-                    pass
+                except KeyError:
+                    perimeter += 1
                 try:
                     if grid[i][j-1] == 0:
                         perimeter += 1
-                except Exception:
-                    pass
+                except KeyError:
+                    perimeter += 1
                 try:
                     if grid[i][j+1] == 0:
                         perimeter += 1
-                except Exception:
-                    pass
+                except KeyError:
+                    perimeter += 1
                 try:
                     if grid[i+1][j] == 0:
                         perimeter += 1
-                except Exception:
-                    pass
+                except KeyError:
+                    perimeter += 1
             j += 1
         i += 1
     return(perimeter)
